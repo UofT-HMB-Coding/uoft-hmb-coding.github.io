@@ -25,7 +25,8 @@
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            max-width: 800px;
         }
 
         h1 {
@@ -35,8 +36,23 @@
         }
 
         .subtitle {
-            color: #666;
-            font-size: 1.1rem;
+            color: var(--accent-blue);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .intro-text {
+            line-height: 1.6;
+            color: #444;
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .grid-container {
@@ -60,12 +76,12 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            min-height: 80px;
         }
 
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-            background-color: #fff;
         }
 
         .card span {
@@ -75,17 +91,36 @@
         }
 
         footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #888;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .authors {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .funding {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Coding Resources</h1>
+        <h1>Statistical Learning Coding Resources</h1>
         <p class="subtitle">Human Biology Program | University of Toronto</p>
+        
+        <div class="intro-text">
+            This website introduces a collection of coding resources for statistical topics designed to support life science students and researchers seeking deeper methodological understanding. 
     </header>
 
     <div class="grid-container">
@@ -111,7 +146,13 @@
     </div>
 
     <footer>
-        &copy; 2024 UofT HMB Coding Resources
+        <div class="authors">
+            <strong>Contributors:</strong> Amanda Ng, Abby Frix, Julia Gallucci, Daniel Sun, Gracia Dong, Alexandra Malinowski
+        </div>
+        <div class="funding">
+            The creation of these tutorials was part of a project in the Human Biology Program, supported financially by the Pedagogical Innovation and Experimentation fund and through the Work Study Program. 
+        </div>
+        <p>&copy; 2026 UofT HMB Coding Resources</p>
     </footer>
 
 </body>
