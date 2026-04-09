@@ -1,26 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UofT HMB Coding Hub</title>
+    <style>
+        :root {
+            --uoft-blue: #002a5c;
+            --accent-blue: #007fa3;
+            --bg-light: #f4f7f9;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--uoft-blue);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 5px solid var(--uoft-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        .card span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--uoft-blue);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>Coding Resources</h1>
-    <ul>
-        <li>
-            <a href="https://uoft-hmb-coding.github.io/Learn_SQL_Tutorial/">SQL Tutorial</a>
-        </li>
-        <li>
-            <a href="https://uoft-hmb-coding.github.io/Learn_Python_Tutorials/">Python Tutorial</a>
-        </li>
-        <li>
-            <a href="https://uoft-hmb-coding.github.io/LearnR_Data/">R Tutorial (Data Wrangling)</a>
-        </li>
-         <li>
-            <a href="https://uoft-hmb-coding.github.io/LearnR_Visualization/">R Tutorial (Data Visualization)</a>
-        </li>
-        <li>
-            <a href="https://uoft-hmb-coding.github.io/Sample-projects-website/">Topics in Applied Statistics</a>
-        </li>
-    </ul>
+
+    <header>
+        <h1>Coding Resources</h1>
+        <p class="subtitle">Human Biology Program | University of Toronto</p>
+    </header>
+
+    <div class="grid-container">
+        <a href="https://uoft-hmb-coding.github.io/Learn_SQL_Tutorial/" class="card">
+            <span>SQL Tutorial</span>
+        </a>
+        
+        <a href="https://uoft-hmb-coding.github.io/Learn_Python_Tutorials/" class="card">
+            <span>Python Tutorial</span>
+        </a>
+
+        <a href="https://uoft-hmb-coding.github.io/LearnR_Data/" class="card">
+            <span>R Tutorial (Data Wrangling)</span>
+        </a>
+
+        <a href="https://uoft-hmb-coding.github.io/LearnR_Visualization/" class="card">
+            <span>R Tutorial (Data Visualization)</span>
+        </a>
+
+        <a href="https://uoft-hmb-coding.github.io/Sample-projects-website/" class="card">
+            <span>Topics in Applied Statistics</span>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 UofT HMB Coding Resources
+    </footer>
+
 </body>
 </html>
