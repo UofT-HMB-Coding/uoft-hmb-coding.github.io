@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofT HMB Coding Hub</title>
+    <style>
+        :root {
+            --uoft-blue: #002a5c;
+            --accent-blue: #007fa3;
+            --bg-light: #f4f7f9;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: var(--uoft-blue);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--accent-blue);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .intro-text {
+            line-height: 1.6;
+            color: #444;
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 5px solid var(--uoft-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 80px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .card span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--uoft-blue);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .authors {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .funding {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Statistical Learning Coding Resources</h1>
+        <p class="subtitle">Human Biology Program | University of Toronto</p>
+        
+        <div class="intro-text">
+            This website introduces a collection of coding resources for statistical topics designed to support life science students and researchers seeking deeper methodological understanding. 
+    </header>
+
+    <div class="grid-container">
+        <a href="https://uoft-hmb-coding.github.io/Learn_SQL_Tutorial/" class="card">
+            <span>SQL Tutorial</span>
+        </a>
+        
+        <a href="https://uoft-hmb-coding.github.io/Learn_Python_Tutorials/" class="card">
+            <span>Python Tutorial</span>
+        </a>
+
+        <a href="https://uoft-hmb-coding.github.io/LearnR_Data/" class="card">
+            <span>R Tutorial (Data Wrangling)</span>
+        </a>
+
+        <a href="https://uoft-hmb-coding.github.io/LearnR_Visualization/" class="card">
+            <span>R Tutorial (Data Visualization)</span>
+        </a>
+
+        <a href="https://uoft-hmb-coding.github.io/Sample-projects-website/" class="card">
+            <span>Topics in Applied Statistics</span>
+        </a>
+    </div>
+    
+<section style="
+    max-width: 900px;
+    margin-top: 60px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    line-height: 1.6;
+">
+    <h2 style="color: var(--uoft-blue); margin-top: 0;">Contributors</h2>
+    <p>
+    The creation of these tutorials was part of a project in the Human Biology Program, 
+    supported financially by the Pedagogical Innovation and Experimentation fund and through the Work Study Program.
+    The project leads are <strong>Dr. Gracia Dong</strong> and <strong>Dr. Alexandra Malinowski</strong>. 
+    The content within these tutorials was created by a team of undergraduate and graduate students from the University of Toronto:
+    </p>
+
+    <ul style="margin-top: 15px;">
+        <li><strong>Amanda Ng</strong>: MSc Statistics</li>
+        <li><strong>Abigail Frix</strong>: HBSc Ecology and Evolutionary Biology</li>
+        <li><strong>Julia Gallucci</strong>: PhD Candidate, Institute of Medical Science</li>
+        <li><strong>Daniel Sun</strong>: HBSc Statistics and Economics</li>
+    </ul>
+</section>
+
+    
+    <footer>
+        <p>&copy; 2026 UofT HMB Coding Resources</p>
+    </footer>
+
+</body>
+</html>
